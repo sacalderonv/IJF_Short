@@ -43,7 +43,7 @@ devtools::install_version("Rfast", version = "2.1.5.1", dependencies=TRUE)
 devtools::install_version("tsDyn", version = "11.0.5.2" ,dependencies=TRUE)
 devtools::install_version("foreach", version = "1.5.2",dependencies=TRUE)
 devtools::install_version("doParallel", version = "1.0.17",dependencies=TRUE)
-devtools::install_version("doParallel", version = "1.4.6.1",dependencies=TRUE)
+devtools::install_version("ltsa", version = "1.4.6.1",dependencies=TRUE)
 devtools::install_version("mtarm",version="0.1.2",dependencies=TRUE)
 ```
 
