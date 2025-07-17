@@ -43,7 +43,7 @@ devtools::install_version("RcppParalell", version = "5.1.10", repos = "http://cr
 devtools::install_version("RcppZiggurat", version = "0.1.16", repos = "http://cran.us.r-project.org")
 devtools::install_version("Rcpp", version = "1.1.0", repos = "http://cran.us.r-project.org")
 devtools::install_version("Rfast", version = "2.1.0", repos = "http://cran.us.r-project.org")
-devtools::install_version("tsDyn", version = "11.0.4.1", repos = "http://cran.us.r-project.org")
+devtools::install_version("tsDyn", version = "11.0.4", repos = "http://cran.us.r-project.org")
 devtools::install_version("foreach", version = "1.5.1", repos = "http://cran.us.r-project.org")
 devtools::install_version("doParallel", version = "1.0.16", repos = "http://cran.us.r-project.org")
 devtools::install_version("mtarm", version = "0.1.2", repos = "http://cran.us.r-project.org")
