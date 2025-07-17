@@ -18,7 +18,8 @@ cl <- makeCluster(n_cores)
 registerDoParallel(cl)
 
 
-####Defining parameters of the model and  lists for storing the results====n_rep=1000
+####Defining parameters of the model and  lists for storing the results====
+n_rep=1000
 
 
 
@@ -244,7 +245,6 @@ for(replicas in 1:n_rep){
   
   
   summary_Bayes_student<-summarymtar_simulation(fit1_2reg_Student,Get.results = TRUE,Print.Results = FALSE)
-  summary(fit1_2reg_Student)
   summary_Bayes_gaussian<-summarymtar_simulation(fit1_2reg_Gaussian,Get.results = TRUE,Print.Results = FALSE)
   summary_Bayes_slash<-summarymtar_simulation(fit1_2reg_Slash,Get.results = TRUE,Print.Results = FALSE)
   summary_Bayes_laplace<-summarymtar_simulation(fit1_2reg_Laplace,Get.results = TRUE,Print.Results = FALSE)
@@ -287,6 +287,6 @@ repl_estimation_oth_dist_laplace<-repl_laplace_estimation
 
 
 param.extra=TRUE  #put TRUE or FALSE depends if the true distribution error has or not extra parameter
-if(param.extra){save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,extra,Rg,ars,h.ahead,Rg,file="replicas_Identify_Dist_RelativeBias_Forecasting_1000_2reg_ForStudent_Prueba.rds")}else
-{save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,Rg,ars,h.ahead,file="replicas_Identify_Dist_RelativeBias_Forecasting_1000_2reg_ForStudent_Prueba.rds")}
+if(param.extra){save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,extra,Rg,ars,h.ahead,Rg,file="replicas_Identify_Dist_RelativeBias_Forecasting_1000_2reg_ForStudent_1.rds")}else
+{save(repl,repl_estimation,repl_compare_dist_todo,repl,repl_estimation_oth_dist_Gaussian,repl_estimation_oth_dist_slash,repl_estimation_oth_dist_contaminated,repl_estimation_oth_dist_hyperbolic,repl_estimation_oth_dist_laplace,umbrales,Rg,ars,h.ahead,file="replicas_Identify_Dist_RelativeBias_Forecasting_1000_2reg_ForStudent_1.rds")}
 
