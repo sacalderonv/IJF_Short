@@ -37,11 +37,11 @@ setwd("path/to/IJF")
 
 ```r
 install.packages("devtools")
-devtools::install_version("GIGrvg", version = "0.8", ,dependencies=TRUE)
+devtools::install_version("GIGrvg", version = "0.8", dependencies=TRUE)
 devtools::install_version("Formula", version = "1.2.5",dependencies=TRUE)
 devtools::install_version("Rfast", version = "2.1.5.1", dependencies=TRUE)
 devtools::install_version("tsDyn", version = "11.0.5.2" ,dependencies=TRUE)
-devtools::install_version("foreach", version = "1.5.2", repos = ,dependencies=TRUE)
+devtools::install_version("foreach", version = "1.5.2",dependencies=TRUE)
 devtools::install_version("doParallel", version = "1.0.17",dependencies=TRUE)
 devtools::install_version("doParallel", version = "1.4.6.1",dependencies=TRUE)
 devtools::install_version("mtarm",version="0.1.2",dependencies=TRUE)
@@ -78,6 +78,10 @@ source("R files for M2 structure model 3 reg/Resumen_Replicas_3Reg_Final.R")
 
 Tables will be printed in the R console. You may redirect output to files if desired.
 
+
+**Remark 1:** Note that the reference examples for simulating in the context of M1 structure is for student-t distribution error, and for structure 2 is for slash distribution error.
+
+**Remark 2:** For visuslizing results, by default it is considered student-t distribution as true distribution for errors in M1 structure. On the other hand, for M2 structure, we consider Gaussina distribution for errors.
 ---
 
 ## Notes on reproducibility
