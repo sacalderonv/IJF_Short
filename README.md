@@ -18,7 +18,7 @@ The structure includes scripts, simulation results, and data to replicate the ke
 
 ### Repository contents
 
-- `R Files for M1 model structure 2 reg/`: R scripts and `.rds` files (1000 replications) for Table 10 and Student-t columns of Tables 1, 2, and 5.
+- `R Files for M1 model structure 2 reg/`: R scripts and `.rds` files (1000 replications) for Table 10 and Student-t columns of Tables 1, 2, 5 and 9.
 - `R files for M2 structure model 3 reg/`: R scripts and `.rds` files (1000 replications for each distribution) for Tables 3,4 and 6. Initially, it is set to show results for Gaussian distribution.
 - `data/`: Contains the empirical application dataset on river flow in Colombia.
 
