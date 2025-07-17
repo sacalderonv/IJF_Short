@@ -20,8 +20,8 @@ n_rep=1000
 ####
 
 ###Load information, you should activate one of the following 6 lines and update the names in lines from 23 to 28 for the corresponding distribution error
-#load("replicas_gaussian_1000_3reg1.rds")
-load("replicas_student_1000_3reg1.rds")
+load("replicas_gaussian_1000_3reg1.rds")
+#load("replicas_student_1000_3reg1.rds")
 #load("replicas_slash_1000_3reg1.rds")
 #load("replicas_contaminated_1000_3reg1.rds")
 #load("replicas_hyperbolic_1000_3reg1.rds")
@@ -29,10 +29,10 @@ load("replicas_student_1000_3reg1.rds")
 
 
 ## list for Estimation of the selected distribution, you must change the name of the distribution in the next line in "repl_hyperbolic_estimation"
-repl_estimation<-repl_student_estimation
+repl_estimation<-repl_gaussian_estimation
 
 ##Flist for forecasting n.ahead with selected distribution, you must change the name of the distribution in the next line in "repl_hyperbolic"
-repl<-repl_student
+repl<-repl_gaussian
 
 
 
@@ -42,7 +42,7 @@ k = 2 ##Dimension of the output vector
 v=0 ## Dimension of the exogenous variable vector
 ars <- list(p=c(1,1,1),q=c(0,0,0),d=c(0,0,0))
 delay <- 1
-para.extra=TRUE #Depend if the distribution error has or nor extra parameter tou have to change to TRUE or FALSE
+para.extra=FALSE #Depend if the distribution error has or nor extra parameter tou have to change to TRUE or FALSE
 
 
 
