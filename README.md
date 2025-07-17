@@ -27,10 +27,16 @@ The structure includes scripts, simulation results, and data to replicate the ke
 ## Reproducibility instructions
 
 ### Step 1: Clone the repository and set working directory
+We may choose the folder for M1 structure
+```r
+git clone https://github.com/sacalderonv/IJF.git
+setwd("path/to/IJF/R Files for M1 model structure 2 reg")
+```
+or for M2 structure
 
 ```r
 git clone https://github.com/sacalderonv/IJF.git
-setwd("path/to/IJF")
+setwd("path/to/IJF/R files for M2 structure model 3 reg")
 ```
 
 ### Step 2: Install required packages with specific versions
@@ -52,14 +58,14 @@ devtools::install_version("mtarm",version="0.1.2",dependencies=TRUE)
 You may choose to re-run the simulations from scratch for M1 structure:
 
 ```r
-source("R Files for M1 model structure 2 reg/summarymtar_simulation.R")
-source("R Files for M1 model structure 2 reg/IJFSimulChequeoDistribution2regbaseFinalParalelizar.R")
+source("summarymtar_simulation.R")
+source("IJFSimulChequeoDistribution2regbaseFinalParalelizar.R")
 ```
 and for M2 struture
 
 ```r
-source("R files for M2 structure model 3 reg/summarymtar_simulation.R")
-source("R files for M2 structure model 3 reg/SimulayEstimaMtar_Replicas3Reg.R")
+source("summarymtar_simulation.R")
+source("SimulayEstimaMtar_Replicas3Reg.R")
 ```
 
 Or use the saved `.rds` replication results to extract tables directly.
@@ -68,12 +74,12 @@ Or use the saved `.rds` replication results to extract tables directly.
 
 For structure M1
 ```r
-source("R Files for M1 model structure 2 reg/Resumen_Replicas_Student.R")
+source("Resumen_Replicas_Student.R")
 ```
 
 For structure M2
 ```r
-source("R files for M2 structure model 3 reg/Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
 ```
 
 Tables will be printed in the R console. You may redirect output to files if desired.
