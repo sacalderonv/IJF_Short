@@ -235,5 +235,5 @@ time.taken <- round(end.time - start.time,2)
 time.taken
 ####Save Replications====
 
-save(repl_slash_estimation,repl_slash,extra,umbrales,Rg,file="replicas_slash_1000_3reg_Prueba1.rds")
+save(repl_slash_estimation,repl_slash,extra,umbrales,Rg,file="replicas_slash_1000_3reg1.rds")
 
