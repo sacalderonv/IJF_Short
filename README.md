@@ -65,8 +65,13 @@ Or use the saved `.rds` replication results to extract tables directly.
 
 ### Step 4: Generate tables
 
+For struture M1
 ```r
 source("R Files for M1 model structure 2 reg/Resumen_Replicas_Student.R")
+```
+
+For struture M2
+```r
 source("R files for M2 structure model 3 reg/Resumen_Replicas_3Reg_Final.R")
 ```
 
