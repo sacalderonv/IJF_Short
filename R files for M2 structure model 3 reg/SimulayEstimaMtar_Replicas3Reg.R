@@ -10,6 +10,7 @@ library(Formula)
 library(Rfast)
 library(mtarm)
 library(stats)
+library(ltsa)
 
 ####Defining parameters of the model and  lists for storing the results====
 n_rep=1000 ##number of replications
@@ -46,7 +47,7 @@ v=0
 simulate_arma <- function(ar_params = NULL, ma_params = NULL, constant = 0, n = 100, sigma2 = 1){ 
   
   # Load necessary library
-  library(stats)
+  
   
   # Validate input
   if (is.null(ar_params) && is.null(ma_params)) {
