@@ -81,7 +81,8 @@ Tables will be printed in the R console. You may redirect output to files if des
 
 **Remark 1:** Note that the reference examples for simulating in the context of M1 structure is for student-t distribution error, and for structure 2 is for slash distribution error.
 
-**Remark 2:** For visuslizing results, by default it is considered student-t distribution as true distribution for errors in M1 structure. On the other hand, for M2 structure, we consider Gaussina distribution for errors.
+**Remark 2:** For visuslizing results, by default it is considered student-t distribution as true distribution for errors in M1 structure. On the other hand, for M2 structure, we consider Gaussian distribution for errors.
+
 ---
 
 ## Notes on reproducibility
