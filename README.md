@@ -52,7 +52,7 @@ devtools::install_version("doParallel", version = "1.0.17",dependencies=TRUE)
 devtools::install_version("ltsa", version = "1.4.6.1",dependencies=TRUE)
 devtools::install_version("mtarm",version="0.1.2",dependencies=TRUE)
 ```
-**Remark:** The R version used to run the simulations was 4.3.3, however you can use the recent R version 4.5.1. Additionally, you can also use the most recent version of the package `mtarm`(0.1.6).
+**Remark:** The R version used to run the simulations was 4.3.3, however you can use the recent R version 4.5.1. Additionally, you can also use the most recent version of the package `mtarm`(0.1.6) with the same version of the other packages.
 
 ### Step 3: Run full simulations (optional)
 
