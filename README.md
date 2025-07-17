@@ -58,8 +58,8 @@ source("R Files for M1 model structure 2 reg/IJFSimulChequeoDistribution2regbase
 and for M2 struture
 
 ```r
-source("/R files for M2 structure model 3 reg/summarymtar_simulation.R")
-source("/R files for M2 structure model 3 reg/SimulayEstimaMtar_Replicas3Reg.R")
+source("R files for M2 structure model 3 reg/summarymtar_simulation.R")
+source("R files for M2 structure model 3 reg/SimulayEstimaMtar_Replicas3Reg.R")
 ```
 
 Or use the saved `.rds` replication results to extract tables directly.

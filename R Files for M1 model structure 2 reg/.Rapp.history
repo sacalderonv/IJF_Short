@@ -1,0 +1,78 @@
+getwd()
+install.packages("devtools")#
+devtools::install_version("mtarm", version = "0.1.2", repos = "http://cran.us.r-project.org")#
+devtools::install_version("GIGrvg", version = "0.7", repos = "http://cran.us.r-project.org")#
+devtools::install_version("Formula", version = "1.2.4", repos = "http://cran.us.r-project.org")#
+devtools::install_version("Rfast", version = "2.1.0", repos = "http://cran.us.r-project.org")#
+devtools::install_version("tsDyn", version = "11.0.4.1", repos = "http://cran.us.r-project.org")#
+devtools::install_version("foreach", version = "1.5.1", repos = "http://cran.us.r-project.org")#
+devtools::install_version("doParallel", version = "1.0.16", repos = "http://cran.us.r-project.org")
+library(devtool)
+library(devtools)
+devtools::install_version("GIGrvg", version = "0.7", repos = "http://cran.us.r-project.org")
+devtools::install_version("mtarm", version = "0.1.2", repos = "http://cran.us.r-project.org")
+devtools::install_version("Formula", version = "1.2.4", repos = "http://cran.us.r-project.org")
+devtools::install_version("Rfast", version = "2.1.0", repos = "http://cran.us.r-project.org")
+sessionInfo()
+devtools::install_version("tsDyn", version = "11.0.4.1", repos = "http://cran.us.r-project.org")
+devtools::install_version("foreach", version = "1.5.1", repos = "http://cran.us.r-project.org")
+devtools::install_version("doParallel", version = "1.0.16", repos = "http://cran.us.r-project.org")
+library(GIGrvg)#
+library(Formula)#
+library(Rfast)#
+library(tsDyn)#
+library(mtarm)#
+library(foreach)#
+library(doParallel)
+devtools::install_version("GIGrvg", version = "0.7", repos = "http://cran.us.r-project.org")
+install.packages("devtools")
+library(devtools)
+devtools::install_version("GIGrvg", version = "0.7", repos = "http://cran.us.r-project.org")
+library(GIGrvg)
+devtools::install_version("Formula", version = "1.2.4", repos = "http://cran.us.r-project.org")
+library(Formula)
+devtools::install_version("Rfast", version = "2.1.0", repos = "http://cran.us.r-project.org")
+library(Rfast)
+devtools::install_version("RcppGSL", version = "0.3.13", repos = "http://cran.us.r-project.org")
+devtools::install_version("RcppArmadillo", version = "0.12.6.6.1", repos = "http://cran.us.r-project.org")
+library(Rfast)
+sessionInfo()
+devtools::install_version("tsDyn", version = "11.0.4.1", repos = "http://cran.us.r-project.org")
+library(tsDyn)
+library(GIGrvg)
+library(Formula)
+library(Rfast)
+library(tsDyn)
+library(forecast)
+library(GIGrvg)
+library(Formula)
+library(Rfast)
+library(Rfast)
+library(tsDyn)
+sessionInfo()
+library(tsDyn)
+library(foreach)
+library(doParallel)
+library(devtools)
+install_version("mtarm",version="0.1.2")
+library(mtarm)
+sessionInfo()
+?install_version
+install_version("mtarm",version="0.1.2",dependencies=TRUE)
+source("R files for M2 structure model 3 reg/Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("summarymtar_simulation.R")
+source("IJFSimulChequeoDistribution2regbaseFinalParalelizar.R")
+source("SimulayEstimaMtar_Replicas3Reg.R")
+source("SimulayEstimaMtar_Replicas3Reg.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+source("Resumen_Replicas_3Reg_Final.R")
+sessionInfo()
+sessionInfo()
+library(ltsa)
