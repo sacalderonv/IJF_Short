@@ -37,13 +37,13 @@ setwd("path/to/IJF")
 
 ```r
 install.packages("devtools")
-devtools::install_version("mtarm", version = "0.1.2", repos = "http://cran.us.r-project.org")
 devtools::install_version("GIGrvg", version = "0.7", repos = "http://cran.us.r-project.org")
 devtools::install_version("Formula", version = "1.2.4", repos = "http://cran.us.r-project.org")
 devtools::install_version("Rfast", version = "2.1.0", repos = "http://cran.us.r-project.org")
 devtools::install_version("tsDyn", version = "11.0.4.1", repos = "http://cran.us.r-project.org")
 devtools::install_version("foreach", version = "1.5.1", repos = "http://cran.us.r-project.org")
 devtools::install_version("doParallel", version = "1.0.16", repos = "http://cran.us.r-project.org")
+devtools::install_version("mtarm", version = "0.1.2", repos = "http://cran.us.r-project.org")
 ```
 
 ### Step 3: Run full simulations (optional)
@@ -81,7 +81,7 @@ Tables will be printed in the R console. You may redirect output to files if des
 
 ## Notes on reproducibility
 
-- No fixed seed is specified in the simulation scripts; results may vary slightly with each execution.
+- No fixed seed were specified in the scripts simulations; results may vary slightly with each execution.
 - To ensure reproducibility, you can modify the scripts to include `set.seed(1234)` before any random generation.
 - Simulations take approximately 1.37 minutes per replication for M1 and 57 seconds per replication for M2 on an iMac 2019 (3.0GHz i5, 8GB RAM).
 
@@ -89,7 +89,7 @@ Tables will be printed in the R console. You may redirect output to files if des
 
 ## Data description
 
-The data correspond to an empirical application involving two daily river flows and precipitation data in Colombia. Originally analyzed in Calderón & Nieto (2016) [DOI](https://doi.org/10.1080/03610926.2014.990758), the dataset is available in `data/riverflows.rda`.
+The data correspond to an empirical application involving two daily river flows and precipitation data in Colombia. Originally analyzed in Calderón & Nieto (2016) [DOI](https://doi.org/10.1080/03610926.2014.990758), the dataset is available in `data/riverflows.rda`.75 minutes was the approximate time that took the script to generate table 11.
 
 ---
 
