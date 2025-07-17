@@ -94,7 +94,7 @@ Tables will be printed in the R console. You may redirect output to files if des
 
 ## Notes on reproducibility
 
-- No fixed seed were specified in the scripts simulations; results may vary slightly with each execution.
+- No fixed seed were specified in the scripts for simulations and data analysis; results may vary slightly with each execution.
 - To ensure reproducibility, you can modify the scripts to include `set.seed(1234)` before any random generation.
 - Simulations take approximately 1.37 minutes per replication for M1 and 57 seconds per replication for M2 on an iMac 2019 (3.0GHz i5, 8GB RAM).
 - 75 minutes was the approximate time that took the script to generate table 11.
