@@ -48,11 +48,17 @@ devtools::install_version("doParallel", version = "1.0.16", repos = "http://cran
 
 ### Step 3: Run full simulations (optional)
 
-You may choose to re-run the simulations from scratch:
+You may choose to re-run the simulations from scratch for M1 structure:
 
 ```r
 source("R Files for M1 model structure 2 reg/summarymtar_simulation.R")
 source("R Files for M1 model structure 2 reg/IJFSimulChequeoDistribution2regbaseFinalParalelizar.R")
+```
+and for M2 struture
+
+```r
+source("/R files for M2 structure model 3 reg/summarymtar_simulation.R")
+source("/R files for M2 structure model 3 reg/SimulayEstimaMtar_Replicas3Reg.R")
 ```
 
 Or use the saved `.rds` replication results to extract tables directly.
