@@ -125,7 +125,7 @@ source("Resumen_Replicas_Student.R")
 ```
 
 Adjust the file names and parameters as needed for other distributions or model structures.
-
+Any other details can be found in pdf file "[DetailsforScript.pdf](DetailsforScript.pdf)".
 ---
 
 ## License
