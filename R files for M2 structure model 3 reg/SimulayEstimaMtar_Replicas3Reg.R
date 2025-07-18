@@ -11,7 +11,6 @@ library(Rfast)
 library(mtarm)
 library(stats)
 library(ltsa)
-
 ####Defining parameters of the model and  lists for storing the results====
 n_rep=1000 ##number of replications
 
@@ -34,6 +33,7 @@ calen=100 ## Starting values
 long=1000 ##Long of Series
 h.ahead=10 ## forecast horizon
 Tlen = long+calen+h.ahead
+
 
 
 
@@ -73,7 +73,6 @@ simulate_arma <- function(ar_params = NULL, ma_params = NULL, constant = 0, n = 
   }
   return(arma_series)
 }
-
 
 
 ###Structural parameters and parameters for the exogenous and threshold processes
@@ -235,6 +234,5 @@ end.time <- Sys.time()
 time.taken <- round(end.time - start.time,2)
 time.taken
 ####Save Replications====
-
 save(repl_slash_estimation,repl_slash,extra,umbrales,Rg,file="replicas_slash_1000_3reg1.rds")
 
