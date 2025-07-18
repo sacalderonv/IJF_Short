@@ -340,7 +340,7 @@ repl_estimation_oth_dist<-repl_estimation_oth_dist_laplace
 #repl_estimation_oth_dist<-repl_estimation_oth_dist_student
 #repl_estimation_oth_dist<-repl_estimation
 
-para.extra=FALSE  ###True or false depends on the distribution which be compared, in this case ins laplace, the object para.extra is set in FAlSE
+para.extra=FALSE  ###True or false depends on the distribution which be compared, in this case ins laplace, the object para.extra is set in FALSE
 
 any(sapply(repl_estimation_oth_dist, is.null))
 
