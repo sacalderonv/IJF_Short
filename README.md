@@ -103,7 +103,18 @@ Tables will be printed in the R console. You may redirect output to files if des
 
 ## Data description
 
-The data correspond to an empirical application involving two daily river flows and precipitation data in Colombia. Originally analyzed in Calderón & Nieto (2016) [DOI](https://doi.org/10.1080/03610926.2014.990758), the dataset is available in `data/riverflows.rda`.
+The data correspond to an empirical application involving two daily river flows and precipitation data in Colombia. Originally analyzed in Calderón & Nieto (2016) [doi](https://doi.org/10.1080/03610926.2014.990758), the dataset is available in `data/riverflows.rda`.
+
+The data set for financial time series in Online Appendix can be obtained from `mtarm` package using
+
+
+```r
+library(mtarm)
+data(returns)
+```
+
+This data set was used in article Romero and Calderón(2019) [doi](https://doi.org/10.1080/03610926.2019.1669807) and was taken from Banco de la República de Colombia web page and investing platform. 
+
 
 ---
 
