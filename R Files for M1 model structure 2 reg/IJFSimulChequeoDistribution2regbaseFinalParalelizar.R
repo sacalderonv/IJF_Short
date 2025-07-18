@@ -12,6 +12,7 @@ library(mtarm)
 library(foreach)
 library(doParallel)
 
+n_rep=1000
 # Detect the number of available cores
 n_cores <- detectCores() - 1  # Leave one core free
 cl <- makeCluster(n_cores)
@@ -19,7 +20,6 @@ registerDoParallel(cl)
 
 
 ####Defining parameters of the model and  lists for storing the results====
-n_rep=1000
 
 
 
@@ -30,7 +30,6 @@ repl_student<-vector("list", n_rep)  #Store forcasting for TRUE distribution
 #repl_hyperbolic<-vector("list", n_rep)
 #repl_slash<-vector("list", n_rep)
 #repl_contaminated<-vector("list", n_rep)
-
 
 #Store estimation for TRUE and alternative distributions
 repl_student_estimation<-vector("list", n_rep)
@@ -55,6 +54,7 @@ inic<-calen
 ######
 
 
+
 dimeUt=3
 Sigma_ut = diag(2,dimeUt,dimeUt) 
 Phi_ut = list(phi1 = matrix(c(0.24,0.48,-0.12,0.46,-0.36,0.1,-0.12,-0.47,0.58),dimeUt,dimeUt,byrow = TRUE))
@@ -68,7 +68,6 @@ mean_VAR=solve(diag(3)-R_ut$Phi$phi1)%*%R_ut$cs
 k = 3
 v=2
 
-
 dist <- "Student-t"
 #extra <- c(0.05,0.1)
 #extra=0.11
@@ -76,6 +75,7 @@ extra=3
 delay <- 0
 
 ars <- list(p=c(1,2),q=c(1,0),d=c(1,0))
+
 
 
 Intercept <- TRUE
@@ -229,7 +229,6 @@ for(replicas in 1:n_rep){
   DIC_models_dist<-as.matrix(t(dic_values))
   WAIC_models_dist<-as.matrix(t(waic_values))
   
-  
   min_index_DIC_dist <- which.min(DIC_models_dist)
   min_index_WAIC_dist <- which.min(WAIC_models_dist)
   ######
@@ -241,6 +240,7 @@ for(replicas in 1:n_rep){
   
   repl_student_compare_dist[[replicas]]<-list(DIC_models_dist=DIC_models_dist,WAIC_models_dist=WAIC_models_dist,Min_DIC_dist=c(min_name_DIC_dist,min_value_DIC_dist), Min_WAIC_dist=c(min_name_WAIC_dist,min_value_WAIC_dist) )
   #####
+  
   
   
   
