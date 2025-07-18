@@ -28,10 +28,10 @@ load("replicas_gaussian_1000_3reg1.rds")
 #load("replicas_laplace_1000_3reg1.rds")
 
 
-## list for Estimation of the selected distribution, you must change the name of the distribution in the next line in "repl_hyperbolic_estimation"
+## list for Estimation of the selected distribution, you must change the name of the distribution in the next line in 
 repl_estimation<-repl_gaussian_estimation
 
-##Flist for forecasting n.ahead with selected distribution, you must change the name of the distribution in the next line in "repl_hyperbolic"
+##list for forecasting n.ahead with selected distribution, you must change the name of the distribution in the next line in 
 repl<-repl_gaussian
 
 
